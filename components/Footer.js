@@ -1,9 +1,14 @@
 import { useConfig } from '@/lib/config'
 import NotByAI from '@/components/NotByAI'
+import NotByAIDark from '@/components/NotByAIDark'
+
+import useTheme from '@/lib/theme'
+
+
 const Footer = ({ fullWidth }) => {
   const BLOG = useConfig()
+  const { dark } = useTheme()
 
-  const d = new Date()
   return (
     <div
       className={`mt-6 flex-shrink-0 m-auto w-full text-gray-500 dark:text-gray-400 transition-all ${
@@ -16,7 +21,8 @@ const Footer = ({ fullWidth }) => {
           <p>
             © {BLOG.author} 
           </p>
-          <NotByAI />
+
+          {dark ? <NotByAIDark /> : <NotByAI />}
         </div>
       </div>
     </div>
