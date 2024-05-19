@@ -1,6 +1,6 @@
 const BLOG = {
   title: 'Sensei Notes',
-  author: '',
+  author: 'Kang',
   email: '',
   link: 'https://sensei.eu.org',
   description: '',
