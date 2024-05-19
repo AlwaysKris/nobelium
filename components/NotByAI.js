@@ -1,4 +1,4 @@
-const Vercel = () => {
+const NotByAI = () => {
   return (
     <svg
       width="131"
@@ -148,4 +148,4 @@ const Vercel = () => {
   );
 };
 
-export default Vercel;
+export default NotByAI;
